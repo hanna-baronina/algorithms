@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSum {
+public class AllTwoSums {
     public static void main(String[] args){
         int[] array = {3,5,2,4,6,7,2,6};
         int target = 9;
