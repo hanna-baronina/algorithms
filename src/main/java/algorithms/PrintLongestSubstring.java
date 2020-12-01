@@ -11,7 +11,7 @@ public class PrintLongestSubstring {
         int maxLength = 0;
 
         while(endIndex < sentence.length()){
-            if(isUnique(sentence.substring(startIndex, endIndex+1))){
+            if(isUnique(sentence.substring(startIndex, endIndex + 1))){
                 int currentLength = endIndex - startIndex + 1;
                 if (currentLength > maxLength){
                     maxLength = currentLength;
@@ -31,6 +31,5 @@ public class PrintLongestSubstring {
         }
 
         return substring.length() == substringChars.size();
-
     }
 }
