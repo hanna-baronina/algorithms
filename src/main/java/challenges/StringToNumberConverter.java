@@ -12,7 +12,6 @@ public class StringToNumberConverter {
         }
         return numberInteger;
     }
-
     private static int convertCharToIntHackyWay(char character) {
         return character - '0';
     }
