@@ -1,24 +1,18 @@
 package challenges;
 
-import java.util.HashMap;
-import java.util.Map;
-
-
 public class ElementSumEqualsToGivenNumberFinder {
     public static void main(String[] args) {
-        int[] array = {2, 3, 5, 8, 4, 4};
-        int number = 6;
+        int[] array = {1, 2, 4, 2, 3, 4, 2};
+        int number = 4;
         getNumbers(number, array);
     }
 
     public static void getNumbers(int number, int[] array) {
-        Map<Integer, Integer> numbers = new HashMap<>();
-        for (int i = 0; i < array.length; i++) {
-            int searchedNumber = number - array[i];
-            if (!numbers.containsKey(searchedNumber)) {
-                numbers.put(array[i], i);
-            } else {
-                System.out.println(array[i] + ":" + searchedNumber);
+        for(int i = 0; i < array.length; i++){
+            for(int j = i + 1; j < array.length; j++){
+                if(array[i] + array[j] == number){
+                    System.out.println(array[i] + ":" + array[j]) ;
+                }
             }
         }
     }
