@@ -2,7 +2,7 @@ package challenges;
 
 public class MaxSumFinder {
     public static void main(String[] args) {
-        int[] array = {-2, -3, 4, -1, -2, 1, 5, -3};
+        int[] array = {-2, -3, 4, -1, -2, 1, -5, 300};
         System.out.println(getMaxSum(array));
 
     }
@@ -13,10 +13,10 @@ public class MaxSumFinder {
         for (int i = 0; i < array.length; i++) {
             if (currentSum + array[i] >= array[i]) {
                 currentSum = currentSum + array[i];
-                maxSum = Math.max(currentSum, maxSum);
             } else {
                 currentSum = array[i];
             }
+            maxSum = Math.max(currentSum, maxSum);
         }
         return maxSum;
     }

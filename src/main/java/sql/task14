@@ -1,0 +1,4 @@
+SELECT  customer.customer_id, customer.cust_name, salesman.name AS "Salesman"
+FROM customer
+INNER JOIN salesman
+ON customer.salesman_id = salesman.salesman_id

@@ -1,0 +1,5 @@
+SELECT employees.FIRST_NAME AS "First Name", employees.LAST_NAME AS "Last Name", employees.SALARY
+FROM employees
+WHERE salary < (SELECT employees.SALARY
+                FROM employees
+                WHERE employees.EMPLOYEE_ID = 182)

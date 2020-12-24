@@ -1,0 +1,6 @@
+SELECT employees.FIRST_NAME AS "First Name", employees.LAST_NAME AS "Last Name", departments.DEPARTMENT_NAME AS "Department", locations.CITY AS "City"
+FROM employees
+INNER JOIN departments
+ON employees.DEPARTMENT_ID = departments.DEPARTMENT_ID
+INNER JOIN locations
+ON departments.LOCATION_ID = locations.LOCATION_ID

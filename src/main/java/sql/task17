@@ -1,0 +1,5 @@
+SELECT employees.FIRST_NAME AS "First Name", employees.LAST_NAME AS "Last Name", departments.DEPARTMENT_ID ,departments.DEPARTMENT_NAME AS "Department"
+FROM employees
+INNER JOIN departments
+ON employees.DEPARTMENT_ID = departments.DEPARTMENT_ID
+AND departments.DEPARTMENT_ID IN (40, 80)
