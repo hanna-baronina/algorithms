@@ -9,35 +9,35 @@ public class SequenceInSentenceCheckerTest {
     public void inputExistingWordTwoStartLetters(){
         String word = "exercises";
         String sentence = "Hello Exercises";
-        Assert.assertTrue(SequenceInSentenceChecker2.checkPresenceOfSequenceInSentence(sentence,word));
+        Assert.assertTrue(SequenceInSentenceChecker3.checkSequencePresent(sentence,word));
     }
 
     @Test
     public void inputUnexistingWordTwoStartLetters(){
         String word = "pava";
         String sentence = "Python Exercises";
-        Assert.assertFalse(SequenceInSentenceChecker2.checkPresenceOfSequenceInSentence(sentence,word));
+        Assert.assertFalse(SequenceInSentenceChecker3.checkSequencePresent(sentence,word));
     }
 
     @Test
     public void inputExistingWord(){
         String word = "exercises";
         String sentence = "Pyton Exercises";
-        Assert.assertTrue(SequenceInSentenceChecker2.checkPresenceOfSequenceInSentence(sentence,word));
+        Assert.assertTrue(SequenceInSentenceChecker3.checkSequencePresent(sentence,word));
     }
 
     @Test
     public void inputUnexistingWord(){
         String word = "java";
         String sentence = "Pyton Exercises";
-        Assert.assertFalse(SequenceInSentenceChecker2.checkPresenceOfSequenceInSentence(sentence,word));
+        Assert.assertFalse(SequenceInSentenceChecker3.checkSequencePresent(sentence,word));
     }
 
     @Test
     public void inputArrayOut(){
         String word = "java";
         String sentence = "Pyton Exercises jav";
-        Assert.assertFalse(SequenceInSentenceChecker2.checkPresenceOfSequenceInSentence(sentence,word));
+        Assert.assertFalse(SequenceInSentenceChecker3.checkSequencePresent(sentence,word));
     }
 
 }
