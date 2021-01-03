@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class ItemsContainingCharactersPrinterTest {
     String[] getItemsContainingCharacters(String[] words, String givenWord){
-        return ItemsContainingCharactersPrinter.getItemsContainingCharacters(words, givenWord);
+        return ItemsContainingCharactersPrinter3.getItemsContainingCharacters(words, givenWord);
     }
 
     @Test

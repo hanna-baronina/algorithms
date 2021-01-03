@@ -37,12 +37,7 @@ public class ItemsContainingCharactersPrinter {
                 resultList.add(word);
             }
         }
-        String[] resultArray = new String[resultList.size()];
 
-        for(int i = 0; i < resultList.size(); i++){
-            resultArray[i] = resultList.get(i);
-        }
-
-        return resultArray;
+        return resultList.toArray(new String[0]);
     }
 }

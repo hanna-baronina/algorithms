@@ -12,11 +12,7 @@ public class ItemsContainingCharactersPrinter2 {
             }
         }
 
-        String[] result = new String[expected.size()];
-        for(int i = 0; i < expected.size(); i ++){
-            result[i] = expected.get(i);
-        }
-        return result;
+        return expected.toArray(new String[0]);
     }
 
     public static boolean hasAllLetters(String givenWord, String word){
