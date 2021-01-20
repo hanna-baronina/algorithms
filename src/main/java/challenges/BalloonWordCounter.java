@@ -4,7 +4,6 @@ public class BalloonWordCounter {
     public static void main(String[] args) {
         String word = "balloonbtrebaoon";
         System.out.println(getNumberOfBalloonWords(word));
-
     }
 
     public static int getNumberOfBalloonWords(String word){
