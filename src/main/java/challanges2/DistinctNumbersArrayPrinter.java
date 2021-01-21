@@ -11,15 +11,16 @@ public class DistinctNumbersArrayPrinter {
 
     public static int[] getDistinctNumbersArray(int[] array){
         int writeIndex = 0;
-        for(int investigate = 0; investigate < array.length; investigate++){
+        for (int investigator = 0; investigator < array.length; investigator++){
             boolean hasDuplicate = false;
-            for(int verify = 0; verify < writeIndex; verify++){
-                if(array[investigate] == array[verify]){
+            for (int verifier = 0; verifier < writeIndex; verifier++){
+                if (array[investigator] == array[verifier]){
                     hasDuplicate = true;
+                    break;
                 }
             }
-            if(!hasDuplicate){
-                array[writeIndex] = array[investigate];
+            if (!hasDuplicate){
+                array[writeIndex] = array[investigator];
                 writeIndex++;
             }
         }

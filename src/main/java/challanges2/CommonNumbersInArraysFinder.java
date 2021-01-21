@@ -12,15 +12,14 @@ public class CommonNumbersInArraysFinder {
 
     public static void getCommonNumbers(int[] array1, int[] array2){
         Set<Integer> firstArrayNumbers = new HashSet<>();
-
-        for(int number : array1){
+        for (int number : array1){
             firstArrayNumbers.add(number);
         }
 
         Set<Integer> printedNumbers = new HashSet<>();
-        for(int number : array2){
-            if(firstArrayNumbers.contains(number)){
-                if(!printedNumbers.contains(number)){
+        for (int number : array2){
+            if (firstArrayNumbers.contains(number)){
+                if (!printedNumbers.contains(number)){
                     System.out.println(number);
                     printedNumbers.add(number);
                 }

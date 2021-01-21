@@ -8,14 +8,14 @@ public class TripletsMaxSumFinder {
     }
 
     public static int getMaxTripletsSum(int[] array){
-        int maxSum = 0;
-        for(int i = 0; i <= array.length - 3; i++){
-            for(int j = i + 1; j <= array.length - 2; j++){
+        int maxSum = Integer.MIN_VALUE;
+        for (int i = 0; i <= array.length - 3; i++){
+            for (int j = i + 1; j <= array.length - 2; j++){
                 int sum = 0;
-                for(int k = j + 1; k < array.length; k++){
+                for (int k = j + 1; k < array.length; k++){
                     sum =  array[i]+ array[j] + array[k];
                     System.out.println(array[i] +""+ array[j]+""+ array[k] + "="+ sum);
-                    if(sum > maxSum){
+                    if (sum > maxSum){
                         maxSum = sum;
                     }
                 }

@@ -1,8 +1,8 @@
 package challanges2;
 
-        import java.util.Arrays;
+import java.util.Arrays;
 
-        import static java.util.Arrays.copyOfRange;
+import static java.util.Arrays.copyOfRange;
 
 public class AllConsecutiveSubArraysMaxSumFinder {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class AllConsecutiveSubArraysMaxSumFinder {
     }
 
     public static int getMaxSumSubArray(int[] array) {
-        int maxSum = 0;
+        int maxSum = Integer.MIN_VALUE;
 
         for (int i = 1; i <= array.length; i++) {
             for (int j = 0; j <= array.length - i; j++) {

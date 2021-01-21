@@ -8,12 +8,12 @@ public class VowelsCalculator {
 
     public static int calculateVowels(String word){
        char[] letters = word.toCharArray();
-       int countVowels = 0;
-       for(char letter : letters){
-           if(letter == 'a' || letter == 'o' || letter == 'e' || letter == 'u'|| letter == 'i'){
-               countVowels++;
+       int vowelsCounter = 0;
+       for (char letter : letters){
+           if (letter == 'a' || letter == 'o' || letter == 'e' || letter == 'u'|| letter == 'i'){
+               vowelsCounter++;
            }
        }
-       return countVowels;
+       return vowelsCounter;
     }
 }

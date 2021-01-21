@@ -11,9 +11,9 @@ public class CharFromWordRemover {
     }
 
     public static String removeGivenLetters(String word, char char1, char char2, char char3){
-        for(int i = 0; i < word.length(); i++){
-           if(word.charAt(i) == char1 && word.charAt(i + 1) == char2){
-              word = word.substring(0, i) +  word.substring(i + 1 + 1);
+        for (int i = 0; i < word.length(); i++){
+           if (word.charAt(i) == char1 && word.charAt(i + 1) == char2){
+              word = word.substring(0, i) +  word.substring(i + 2);
            } else if (word.charAt(i) == char3){
                word = word.substring(0, i) +  word.substring(i + 1);
            }

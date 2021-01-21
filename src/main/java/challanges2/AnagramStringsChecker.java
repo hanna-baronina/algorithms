@@ -8,23 +8,22 @@ public class AnagramStringsChecker {
     }
 
     public static boolean isAnagramWords(String word1, String word2){
-        char[] word1Letters = word1.toCharArray();
         int[] lettersCount = new int[26];
 
-        for(char letter : word1Letters){
+        for (char letter : word1.toCharArray()){
             int position = letter - 'a';
             lettersCount[position]++;
         }
 
-        char[] word2Letters = word2.toCharArray();
-        for(char letter : word2Letters){
+        for (char letter : word2.toCharArray()){
             int position = letter - 'a';
             lettersCount[position]--;
         }
         boolean isEmpty = true;
-        for(int i = 0; i < lettersCount.length; i++){
-            if(lettersCount[i] != 0){
+        for (int value : lettersCount) {
+            if (value != 0) {
                 isEmpty = false;
+                break;
             }
         }
         return isEmpty;
